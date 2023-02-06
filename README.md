@@ -1,2 +1,3 @@
 League of champions!
-IN THIS SMALL PROJECT YOU CAN SEE ALL CHAMPIONS IN LEAGUE OF LEGENDS AND IT'S NUANCES;
+
+In this small project you can see all heroes in league of legends and it's nuances, such as their lore.
