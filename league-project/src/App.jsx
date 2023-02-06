@@ -1,11 +1,31 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
+import { Champions } from './Components/Champions-list/Champions'
+import { Header } from './Components/Header/Header'
+import { allChampions } from './services/api-allheroes'
+import './styles/index.css'
 
 function App() {
-  const [count, setCount] = useState("BEM VINDOS AO LEAGUE OF CÉSAR")
+  const [champions, setChampions] = useState([])
 
+  useEffect(()=>{
+    const loadChampions = async () =>{
+      try{
+        const response = await allChampions.get("");  
+        let result = Object.keys(response.data.data).map((key) => response.data.data[key]);
+        setChampions(result) 
+      }
+      catch(error){
+        alert('Falha na conexão!')
+      }
+    }
+    loadChampions()
+  },[])
+
+  
   return (
     <div>
-        <h1> {count} </h1>
+        <Header/>
+        <Champions champions={champions}/>
     </div>
   )
 }
