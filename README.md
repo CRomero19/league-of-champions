@@ -1,1 +1,2 @@
-# league-of-champions
+League of champions!
+IN THIS SMALL PROJECT YOU CAN SEE ALL CHAMPIONS IN LEAGUE OF LEGENDS AND IT'S NUANCES;
