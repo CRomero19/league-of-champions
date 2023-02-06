@@ -6,6 +6,6 @@ export const allChampions = axios.create({
 })
 
 export const eachChampion = axios.create({
-    baseURL: "http://ddragon.leagueoflegends.com/cdn/13.1.1/data/en_US/champion/Aatrox.json",
+    baseURL: "http://ddragon.leagueoflegends.com/cdn/13.1.1/data/en_US/champion/",
     timeout: 6000,
 })
