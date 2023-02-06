@@ -8,6 +8,7 @@ export const StyledCard = styled.li `
     display: flex;
     gap: 0.5rem;
     
+    
     position: relative;
     font-family: 'Roboto', sans-serif;
     background-color: antiquewhite;

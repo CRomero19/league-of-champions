@@ -1,8 +1,11 @@
 import { useEffect, useState } from 'react'
-import { Champions } from './Components/Champions-list/Champions'
-import { Header } from './Components/Header/Header'
 import { allChampions } from './services/api-allheroes'
+import { Routes, Route , Link} from 'react-router-dom';
 import './styles/index.css'
+import { ChampionsPage } from './Pages/ChampionsPage';
+import { LandingPage } from './Pages/LandingPage';
+import { NotFound } from './Pages/NotFound';
+
 
 function App() {
   const [champions, setChampions] = useState([])
@@ -23,10 +26,11 @@ function App() {
 
   
   return (
-    <div>
-        <Header/>
-        <Champions champions={champions}/>
-    </div>
+    <Routes>
+      <Route path='' element={ <LandingPage/>} />
+      <Route path='/champions-page' element={ <ChampionsPage champions={champions}/> }/>
+      <Route path='*' element={ <NotFound/>} />
+    </Routes>
   )
 }
 

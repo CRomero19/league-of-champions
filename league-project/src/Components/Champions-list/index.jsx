@@ -1,5 +1,5 @@
 import React from 'react'
-import { Championcard } from '../Champion-card/Championcard'
+import { Championcard } from '../Champion-card'
 import { StyledListOfChampions } from './style'
 
 export const Champions = ({champions}) => {
