@@ -7,7 +7,7 @@ export const Champions = ({champions}) => {
     <StyledListOfChampions>
       {
         champions.map(champion =>(
-            <Championcard champion={champion}/> ))
+            <Championcard key={champion.id} champion={champion}/> ))
       }
     </StyledListOfChampions>
   )

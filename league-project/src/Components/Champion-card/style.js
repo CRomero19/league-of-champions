@@ -1,21 +1,20 @@
 import styled, { css } from 'styled-components'
 
 export const StyledCard = styled.li `
-    border: 1px solid black;
+    box-shadow: 0 0 5px 0 black;
     width: 30rem;
     padding: 1rem;
     
     display: flex;
     gap: 0.5rem;
     
-    
     position: relative;
     font-family: 'Roboto', sans-serif;
-    background-color: antiquewhite;
+    background-color: var(--color-grey-20);
 
     img{
-        width: 120px;
-        height: 120px;
+        width: 130px;
+        height: 130px;
         
     }
     strong{
@@ -33,9 +32,7 @@ export const StyledCard = styled.li `
         font-size: 0.8rem;
         background-color: #026685;
         color: #fff;
-        position: absolute;
-        left: 1rem;
-        bottom: 0.3rem;
-        padding: 0.2rem;
+        text-align: center;
     }
+    
 `
