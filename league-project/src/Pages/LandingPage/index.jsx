@@ -7,7 +7,6 @@ export const LandingPage = () => {
   return (
     <StyledLandingPage>
       <div className='main-content'>
-        <h1>LOGO AQUI</h1>
         <Link to={`/champions-page`}> <button> HEROIS AQUI! </button> </Link>
       </div>
     </StyledLandingPage>

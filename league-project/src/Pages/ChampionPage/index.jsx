@@ -7,12 +7,12 @@ import { StyledChampionPage } from './style'
 
 export const ChampionPage = () => {
     const [champion, setChampion] = useState([])
-    const championId = useParams()
+    const {championId} = useParams()
 
     useEffect(() => {
         const currentChampion = async () =>{
             try{
-                const res = await eachChampion.get(`${championId.id}.json`)
+                const res = await eachChampion.get(`${championId}.json`)
                 const result = Object.keys(res.data.data).map((key) => res.data.data[key])
                 setChampion(result)
             }catch(err){
@@ -21,12 +21,17 @@ export const ChampionPage = () => {
         }
         currentChampion()
         },[])
-
-            console.log(champion[0].name)
+       
+      /*  const currentChampion = champion[0]
+       console.log(currentChampion.lore) */
     return(
         <StyledChampionPage>
-            <h1>{champion[0].name}</h1>
-            <img src={`http://ddragon.leagueoflegends.com/cdn/13.1.1/data/en_US/champion/${champion[0].id}.json`} alt="" />
+         {/*  <h1>{champion[0].name}</h1>
+          <img src={`http://ddragon.leagueoflegends.com/cdn/img/champion/loading/${champion[0].id}_0.jpg`} alt="" /> */}
+             
+            <div className='teste'>
+              <h1>teste</h1>
+            </div>
         </StyledChampionPage>
         
     )

@@ -1,3 +1,4 @@
+import React from 'react';
 import { Routes, Route } from 'react-router-dom';
 import { ChampionsPage } from '../Pages/ChampionsPage';
 import { LandingPage } from '../Pages/LandingPage';
@@ -8,7 +9,6 @@ import { ChampionPage } from '../Pages/ChampionPage';
 
 export const AppRoutes = () => {
 const [champions, setChampions] = useState([])
-
   useEffect(()=>{
     const loadChampions = async () =>{
       try{
@@ -22,18 +22,13 @@ const [champions, setChampions] = useState([])
     }
     loadChampions()
   },[])
-
-  
-
   return (
-
     <Routes>
       <Route path='' element={ <LandingPage/>} />
       <Route path='/champions-page' element={ <ChampionsPage champions={champions}/> }/>
-      <Route path='/champions-page/champion/:id' element={ <ChampionPage/>} />
+      <Route path='/champions-page/champion/:championId' element={ <ChampionPage/>} />
       <Route path='*' element={ <NotFound/>} />
     </Routes>
-    
   )
 }
 

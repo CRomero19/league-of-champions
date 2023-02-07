@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import { StyledLinkCard } from '../../styles/Links'
 import { StyledCard } from './style'
 
 export const Championcard = ({champion}) => {
@@ -20,7 +21,7 @@ export const Championcard = ({champion}) => {
       <div className='card-content'>
         <p className='name'> <strong>{champion.name}</strong>, {champion.title} </p> 
         <p> {champion.blurb}</p>
-        <Link to={`champion/${champion.id}`}> <button> Lear more...</button> </Link> 
+        <StyledLinkCard to={`champion/${champion.id}`}> Learn more... </StyledLinkCard> 
         
       </div>
       

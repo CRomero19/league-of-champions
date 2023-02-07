@@ -27,12 +27,19 @@ export const StyledLandingPage = styled.div `
     }
     .main-content{
         color: aliceblue;
+
         display: flex;
         align-items: center;
+        justify-content: center;
+
         gap: 1rem;
         width: 20rem;
         max-width: 90%;
         margin-top: 20rem;
+        
+    }
+    .main-content button{
+        margin: 0 auto;
     }
 
 `
