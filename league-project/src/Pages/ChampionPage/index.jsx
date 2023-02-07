@@ -3,37 +3,53 @@ import { useState, useEffect } from 'react'
 import { useParams } from 'react-router-dom'
 import { eachChampion } from '../../services/api-allheroes'
 import { StyledChampionPage } from './style'
-
+import { Header } from '../../Components/Header'
 
 export const ChampionPage = () => {
-    const [champion, setChampion] = useState([])
+    const [champion, setChampion] = useState(null)
     const {championId} = useParams()
 
     useEffect(() => {
         const currentChampion = async () =>{
             try{
                 const res = await eachChampion.get(`${championId}.json`)
-                const result = Object.keys(res.data.data).map((key) => res.data.data[key])
-                setChampion(result)
+                const champion = Object.keys(res.data.data).map((key) => res.data.data[key])
+                console.log(...champion)
+                setChampion(...champion)
             }catch(err){
                 alert(err)
             }
         }
         currentChampion()
         },[])
-       
-      /*  const currentChampion = champion[0]
-       console.log(currentChampion.lore) */
+
     return(
-        <StyledChampionPage>
-         {/*  <h1>{champion[0].name}</h1>
-          <img src={`http://ddragon.leagueoflegends.com/cdn/img/champion/loading/${champion[0].id}_0.jpg`} alt="" /> */}
-             
-            <div className='teste'>
-              <h1>teste</h1>
-            </div>
-        </StyledChampionPage>
-        
+        <>
+        <Header/>
+        {
+          champion ?
+          <StyledChampionPage>
+            <img src={`http://ddragon.leagueoflegends.com/cdn/img/champion/loading/${champion.id}_0.jpg`} alt="" />  
+      
+            <main>
+              <section className='container__content'>
+                <h1> {champion.name}, {champion.title}</h1>
+                <p>{champion.lore}</p>
+              </section>
+              <section className='container__skills'>
+                <img src={`https://ddragon.leagueoflegends.com/cdn/13.1.1/img/passive/${champion.passive.image.full}`} alt={`${champion.passive.image.full}`} className='img-passive'/>
+                <div>
+                  <p><strong> Passive: </strong> {champion.passive.name}</p>
+                  <p> {champion.passive.description}</p>
+                </div>
+              </section>
+            </main>  
+          </StyledChampionPage>
+          :
+          <h1> Loading ... </h1>
+
+        }
+        </>     
     )
 }
 

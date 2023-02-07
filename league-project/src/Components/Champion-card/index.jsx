@@ -6,9 +6,9 @@ import { StyledCard } from './style'
 export const Championcard = ({champion}) => {
   
   return (
-    <StyledCard>
+    <StyledCard championId = {champion.id}>
       <figure>
-        <img src={`http://ddragon.leagueoflegends.com/cdn/13.1.1/img/champion/${champion.id}.png`} alt="" />
+       <div className='img'></div>
         <figcaption>{
           champion.tags.length == 1 ?
           <p className='tags'>{champion.tags}</p>

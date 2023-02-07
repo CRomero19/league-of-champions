@@ -12,11 +12,6 @@ export const StyledCard = styled.li `
     font-family: 'Roboto', sans-serif;
     background-color: var(--color-grey-20);
 
-    img{
-        width: 130px;
-        height: 130px;
-        
-    }
     strong{
         font-weight: bold;
     }
@@ -34,5 +29,30 @@ export const StyledCard = styled.li `
         color: #fff;
         text-align: center;
     }
+    
+    @media (max-width: 570px)
+        {
+            flex-direction: column;
+        }
+        .img{
+            width: 100%;
+            height: 230px;  
+            background:url(${props=> `http://ddragon.leagueoflegends.com/cdn/img/champion/splash/${props.championId}_0.jpg`});
+            background-position: center;
+            background-size: cover;
+        }
+        
+    @media (min-width: 571px)
+        {
+            .img{
+                width: 150px;
+                height: 272px;
+                background:url(${props=> `http://ddragon.leagueoflegends.com/cdn/img/champion/loading/${props.championId}_0.jpg`});
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: contain;
+                background-color:red;
+            }
+        }
     
 `
