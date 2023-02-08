@@ -10,10 +10,10 @@ export const Header = () => {
       <img src={logo} alt="" />
         <nav>
           <StyledLinkHeader to={`/`}> Home </StyledLinkHeader>
+          <StyledLinkHeader to={`/champions-page`}> About League of legends </StyledLinkHeader>
           <StyledLinkHeader to={`/champions-page`}> Champions </StyledLinkHeader>
-          <StyledLinkHeader to={`/champions-page`}> PAGE?? </StyledLinkHeader>
-          <StyledLinkHeader to={`/champions-page`}> PAGE?? </StyledLinkHeader>
-          <StyledLinkHeader to={`/champions-page`}> LOGIN </StyledLinkHeader>
+          <StyledLinkHeader to={`/champions-page`}> LOGADO && PERFIL </StyledLinkHeader>
+          <StyledLinkHeader to={`/champions-page`}> logado ? LOGOUT : LOGIN </StyledLinkHeader>
         </nav>
 
     </StyledHeader>

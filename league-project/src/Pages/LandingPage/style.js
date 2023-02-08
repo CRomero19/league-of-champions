@@ -1,5 +1,5 @@
 import styled, { css } from 'styled-components'
-import teste from '../../assets/bcg-black.jpg'
+import bcg from '../../assets/bcg-black.jpg'
 
 export const StyledLandingPage = styled.div `
     
@@ -12,7 +12,7 @@ export const StyledLandingPage = styled.div `
     justify-content: center;
     align-items: center;
     
-    background: url(${teste}) no-repeat;
+    background: url(${bcg}) no-repeat;
     background-size: cover;
     background-attachment: fixed;
     background-position: center;

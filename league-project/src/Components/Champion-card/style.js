@@ -9,8 +9,9 @@ export const StyledCard = styled.li `
     gap: 0.5rem;
     
     position: relative;
-    font-family: var(--font-family-medium);
-    background-color: var(--color-grey-20);
+    font-family: 'Roboto';
+    background-color: var(--color-grey-50);
+    /* color: var(--color-secondary-20); */
 
     strong{
         font-weight: bold;
@@ -24,15 +25,17 @@ export const StyledCard = styled.li `
         gap: 1rem;
     }
     .tags{
-        font-size: 0.7  rem;
+        font-size: 0.9rem;
         background-color: #026685;
         color: #fff;
+        font-family: var(--font-family-bold);
         text-align: center;
     }
     
     @media (max-width: 768px)
         {
             flex-direction: column;
+            height: 27rem;
         }
         .img{
             width: 100%;
