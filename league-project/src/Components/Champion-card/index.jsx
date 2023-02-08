@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import { StyledLinkCard } from '../../styles/Links'
+import { StyledLinkCard } from '../../styles/LinkCard'
 import { StyledCard } from './style'
 
 export const Championcard = ({champion}) => {

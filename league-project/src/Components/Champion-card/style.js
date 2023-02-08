@@ -9,14 +9,14 @@ export const StyledCard = styled.li `
     gap: 0.5rem;
     
     position: relative;
-    font-family: 'Roboto', sans-serif;
+    font-family: var(--font-family-medium);
     background-color: var(--color-grey-20);
 
     strong{
         font-weight: bold;
     }
     .name{
-        font-size: 1.4rem;
+        font-size: 1.5rem;
     }
     .card-content{
         display: flex;
@@ -24,13 +24,13 @@ export const StyledCard = styled.li `
         gap: 1rem;
     }
     .tags{
-        font-size: 0.8rem;
+        font-size: 0.7  rem;
         background-color: #026685;
         color: #fff;
         text-align: center;
     }
     
-    @media (max-width: 570px)
+    @media (max-width: 768px)
         {
             flex-direction: column;
         }
@@ -42,7 +42,7 @@ export const StyledCard = styled.li `
             background-size: cover;
         }
         
-    @media (min-width: 571px)
+    @media (min-width: 769px)
         {
             .img{
                 width: 150px;
@@ -51,7 +51,7 @@ export const StyledCard = styled.li `
                 background-repeat: no-repeat;
                 background-position: center;
                 background-size: contain;
-                background-color:red;
+                
             }
         }
     

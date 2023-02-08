@@ -9,6 +9,6 @@ export const StyledListOfChampions = styled.ul `
     
     width: 90%;
     
-    margin: 2rem auto;
+    margin: 7rem auto;
 
 `
