@@ -12,6 +12,7 @@ export const LandingPage = () => {
       <Header/>
       <h1 className='logo'> CHAMPION TRACKER </h1>
         <div className='container__content'>
+
           <section>
             < FaBook size={70}/>
             <h1> Begginers guides! </h1>
@@ -19,13 +20,12 @@ export const LandingPage = () => {
           </section>
 
           <section>
-          < HiOutlineGlobe size={70}/>
+            <HiOutlineGlobe size={70}/>
             <h1> Want to improve?</h1>
             <p> Here you'll get all the statistics you need to get to get to the top!</p>
           </section>
 
-          <section>
-
+          <section className='last-section'>
             <FaGitAlt size={70}/> 
             <h1>Open source</h1>
             <p> Help we build this data tracker! </p>

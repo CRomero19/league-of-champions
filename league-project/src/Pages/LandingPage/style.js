@@ -42,7 +42,6 @@ export const StyledLandingPage = styled.div `
         align-items: center;
         justify-content: center;
     }
-    
     section{
         width: 30%;
         height: 90%;
@@ -51,9 +50,24 @@ export const StyledLandingPage = styled.div `
         text-align: center;
         line-height: 200%;
     }
+
     section h1{
         font-size: 2rem;
         margin: 2rem 0rem;
+    }
+
+    @media (max-width:768px) {
+        .logo{
+            text-align: center;
+            line-height: 100%;
+            font-size: 3rem;
+        }
+        section{
+            width: 50%;
+        }
+        .last-section{
+            display: none;
+        }
     }
 
 `
