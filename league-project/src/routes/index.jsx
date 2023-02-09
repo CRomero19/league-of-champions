@@ -6,6 +6,7 @@ import { NotFound } from '../Pages/NotFound';
 import { useEffect, useState } from 'react'
 import { allChampions } from '../services/api-allheroes'
 import { ChampionPage } from '../Pages/ChampionPage';
+import { AboutLeaguePage } from '../Pages/AboutLeagueOfLegends';
 
 export const AppRoutes = () => {
 const [champions, setChampions] = useState([])
@@ -27,6 +28,7 @@ const [champions, setChampions] = useState([])
       <Route path='' element={ <LandingPage/>} />
       <Route path='/champions-page' element={ <ChampionsPage champions={champions}/> }/>
       <Route path='/champions-page/champion/:championId' element={ <ChampionPage/>} />
+      <Route path='/about' element={ <AboutLeaguePage/>} />
       <Route path='*' element={ <NotFound/>} />
     </Routes>
   )
