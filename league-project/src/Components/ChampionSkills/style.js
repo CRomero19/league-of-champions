@@ -12,6 +12,7 @@ export const StyledSkills = styled.div`
   .passive {
     display: flex;
     align-items: center;
+    gap: 1rem;
   }
   .skills {
     display: flex;

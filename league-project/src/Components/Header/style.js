@@ -13,7 +13,7 @@ export const StyledHeader = styled.header `
     position: fixed;
     top: 0;
     z-index: 1;
-
+    
     img{
         width: 50px;
     }
@@ -21,6 +21,19 @@ export const StyledHeader = styled.header `
         display: flex;
         gap: 1rem;
     }
-    
+    @media (max-width:1023px){
+        nav{
+            display: none;
+        }
+    }
+    @media (min-width:1024px){
+        .hamburger-menu{
+            display: none;
+        }
+        nav{
+            display: flex;
+            align-items: center;
+        }
+    }
 
 `

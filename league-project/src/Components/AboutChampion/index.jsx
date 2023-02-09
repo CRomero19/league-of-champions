@@ -3,6 +3,7 @@ import { StyledAboutChampion } from './style'
 import { GiHealthPotion,GiSwordsEmblem, GiCrossedSwords, GiRunningShoe } from 'react-icons/gi'
 
 export const AboutChampion = ({champion}) => {
+  console.log(champion)
   return (
     <StyledAboutChampion>
                 <h1> How to play with:</h1>
@@ -16,33 +17,40 @@ export const AboutChampion = ({champion}) => {
                 <div className="stats">
                   <div>
                     <h3><GiHealthPotion/> Health and mana</h3>
-                    <p>Base health: {champion.stats.hp}</p>
-                    <p>Health per level: {champion.stats.hpperlevel}</p>
-                    <p>Hp regen: {champion.stats.hpregen}</p>
-                    <p>Hp regen per level: {champion.stats.hpregenperlevel}</p>
-                    <p>Base mana: {champion.stats.mp}</p>
-                    <p>Mana per level: {champion.stats.mpperlevel}</p>
-                    <p>Mp regen: {champion.stats.mpregen}</p>
-                    <p>Mp regen per level: {champion.stats.mpregenperlevel}</p>
+                    <ul>
+                      <li>Base health: {champion.stats.hp}</li>
+                      <li>Health per level: {champion.stats.hpperlevel}</li>
+                      <li>Hp regen: {champion.stats.hpregen}</li>
+                      <li>Hp regen per level: {champion.stats.hpregenperlevel}</li>
+                      <li>Base mana: {champion.stats.mp}</li>
+                      <li>Mana per level: {champion.stats.mpperlevel}</li>
+                      <li>Mp regen: {champion.stats.mpregen}</li>
+                      <li>Mp regen per level: {champion.stats.mpregenperlevel}</li>
+                    </ul>
+                    
                   </div>
                   <div>
                     <h3> <GiCrossedSwords/> Attack </h3>
-                    <p>Attack range: {champion.stats.attackrange}</p>
-                    <p>Base attack damage: {champion.stats.attackdamage}</p>
-                    <p>Attack damage per level: {champion.stats.attackdamageperlevel}</p>
-                    <p>Base attack speed: {champion.stats.attackspeed}</p>
-                    <p>Attack speed per level: {champion.stats.attackspeedperlevel}</p>
+                    <ul>
+                      <li>Attack range: {champion.stats.attackrange}</li>
+                      <li>Base attack damage: {champion.stats.attackdamage}</li>
+                      <li>Attack damage per level: {champion.stats.attackdamageperlevel}</li>
+                      <li>Base attack speed: {champion.stats.attackspeed}</li>
+                      <li>Attack speed per level: {champion.stats.attackspeedperlevel}</li>
+                    </ul>
                   </div>
                   <div>
                     <h3> <GiSwordsEmblem/> Defense </h3>
-                    <p>Base armor: {champion.stats.armor}</p>
-                    <p>Armor per level: {champion.stats.armorperlevel}</p>
-                    <p>Base magic defense: {champion.stats.spellblock}</p>
-                    <p>Magic defense per level: {champion.stats.spellblockperlevel}</p>
+                    <ul>
+                      <li>Base armor: {champion.stats.armor}</li>
+                      <li>Armor per level: {champion.stats.armorperlevel}</li>
+                      <li>Base magic defense: {champion.stats.spellblock}</li>
+                      <li>Magic defense per level: {champion.stats.spellblockperlevel}</li>
+                    </ul>
 
-                    <p className='move-speed'>
-                      <span> <GiRunningShoe/> Move speed: {champion.stats.movespeed}</span>
-                    </p>
+                    
+                      <p> <GiRunningShoe/> Move speed: {champion.stats.movespeed}</p>
+                    
 
                   </div>
                  

@@ -16,6 +16,7 @@ export const AboutLeaguePage = () => {
             to destroy the enemy base while protecting their own. An example of
             another popular MOBA game is Defense of the Ancients (DOTA).
           </p>
+          <h2> Game Modes</h2>
           <p>
             League of Legends features several game modes, each offering a
             unique gameplay experience for players. Some of the most popular
@@ -49,14 +50,13 @@ export const AboutLeaguePage = () => {
                 high-speed gameplay and over-the-top action.{" "}
               </li>
               <li>
-                TFT (Teamfight Tactics): TFT is a strategy game mode where
+                  TFT (Teamfight Tactics): TFT is a strategy game mode where
                 players draft, deploy, and upgrade champions to create powerful
                 teams. Players compete in rounds to earn rewards and climb the
                 leaderboard. TFT is a unique and exciting game mode that
                 challenges players to think critically and make strategic
-                decisions.{" "}
+                decisions.
               </li>
-              <li></li>
             </ul>
             <p>
               These are just a few of the many game modes available in League of
@@ -67,20 +67,29 @@ export const AboutLeaguePage = () => {
               for you.
             </p>
           </p>
-          Known for its intense gameplay, team strategy, and captivating
-          characters. Furthermore, the game is constantly updated with new
-          content, such as characters, skins, events, and game modes, which
-          means that there is always something new and exciting for players to
-          experience. Gameplay is another aspect that makes League of Legends so
-          appealing. With an easy-to-learn but difficult-to-master gameplay
-          system, there is always something new for players to learn and improve
-          upon. Furthermore, with various game modes, there is always a new way
-          to experience and play the game. Ultimately, League of Legends is an
-          incredibly fun and engaging game that offers players a wide range of
-          gaming options. If you are looking for an exciting team strategy game
-          with a vibrant community and intense gameplay, then League of Legends
-          is definitely the game for you. So, what are you waiting for? Come and
-          join the fun now!{" "}
+
+          <h2> Come and play! </h2>
+          <p>
+            Known for its intense gameplay, team strategy, and captivating
+            characters. Furthermore, the game is constantly updated with new
+            content, such as characters, skins, events, and game modes, which
+            means that there is always something new and exciting for players to
+            experience.
+          </p>
+          <p>
+            Gameplay is another aspect that makes League of Legends so
+            appealing. With an easy-to-learn but difficult-to-master gameplay
+            system, there is always something new for players to learn and
+            improve upon. Furthermore, with various game modes, there is always
+            a new way to experience and play the game.
+          </p>
+          <p>
+            Ultimately, League of Legends is an incredibly fun and engaging game
+            that offers players a wide range of gaming options. If you are
+            looking for an exciting team strategy game with a vibrant community
+            and intense gameplay, then League of Legends is definitely the game
+            for you. So, what are you waiting for? Come and join the fun now!
+          </p>
         </section>
       </main>
     </StyledAboutPage>

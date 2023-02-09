@@ -1,10 +1,12 @@
 import React from 'react'
+import { StyledLoadingPage } from './style'
+import { ClapSpinner } from "react-spinners-kit"
 
-export const index = () => {
+export const LoadingPage = () => {
   return (
-    <div>
-      
-    </div>
+    <StyledLoadingPage>
+      <ClapSpinner size={60} color="#7210d4" />
+    </StyledLoadingPage>
   )
 }
 

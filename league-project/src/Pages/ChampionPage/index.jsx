@@ -6,6 +6,7 @@ import { StyledChampionPage } from "./style";
 import { Header } from "../../Components/Header";
 import { AboutChampion } from "../../Components/AboutChampion";
 import { ChampionSkills } from "../../Components/ChampionSkills";
+import { LoadingPage } from "../LoadingPage";
 
 export const ChampionPage = () => {
   const [champion, setChampion] = useState(null);
@@ -31,34 +32,39 @@ export const ChampionPage = () => {
     <Header />
       {champion ? (
         <StyledChampionPage>
-          <img
-            src={`http://ddragon.leagueoflegends.com/cdn/img/champion/loading/${champion.id}_0.jpg`}
-            alt=""
-          />
+          <div className="teste">
+            <img
+              src={`http://ddragon.leagueoflegends.com/cdn/img/champion/loading/${champion.id}_0.jpg`}
+              alt=""
+              className="side-img"
+            />
+            <img src={`http://ddragon.leagueoflegends.com/cdn/img/champion/splash/${championId}_0.jpg`} alt="" className="side-img-small-screen"/>
 
-          <main>
-            <section className="container__content">
-              
-                <h1>
-                  {" "}
-                  {champion.name}, {champion.title}
-                </h1>
-                <p>
-                  {" "}
-                  {champion.tags[0]}{" "}
-                  {champion.tags.length == 2 && `| ${champion.tags[1]}`} -{" "}
-                  {champion.partype}
-                </p>
-              
+            <main>
+              <section className="container__content">
+                
+                  <h1 className="champion-name"> 
+                    {" "}
+                    {champion.name}, {champion.title}
+                  </h1>
+                  <p>
+                    {" "}
+                    {champion.tags[0]}{" "}
+                    {champion.tags.length == 2 && `| ${champion.tags[1]}`} -{" "}
+                    {champion.partype}
+                  </p>
+                
 
-              <ChampionSkills champion={champion}/>
+                <ChampionSkills champion={champion}/>
 
-              <AboutChampion champion={champion}/>
-            </section>
-          </main>
+                <AboutChampion champion={champion}/>
+              </section>
+            </main>
+          </div>
+          
         </StyledChampionPage>
       ) : (
-        <h1> Loading ... </h1>
+        <LoadingPage/>
       )}
     </>
   );

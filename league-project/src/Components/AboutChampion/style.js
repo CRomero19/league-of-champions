@@ -15,10 +15,9 @@ export const StyledAboutChampion = styled.div`
         flex-direction: column;
         position: relative;
     }
-    .move-speed{
+    .stats p{
         position: absolute;
         bottom:0;
     }
-
 
 `
