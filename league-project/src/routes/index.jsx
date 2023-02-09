@@ -30,7 +30,6 @@ const [champions, setChampions] = useState([])
       <Route path='/champions-page' element={ <ChampionsPage champions={champions}/> }/>
       <Route path='/champions-page/champion/:championId' element={ <ChampionPage/>} />
       <Route path='/about' element={ <AboutLeaguePage/>} />
-      <Route path='/loading' element={ <LoadingPage/>} />
       <Route path='*' element={ <NotFound/>} />
     </Routes>
   )

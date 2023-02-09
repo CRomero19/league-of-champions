@@ -1,5 +1,5 @@
 import styled, { css } from 'styled-components'
-import bcg from '../../assets/bcg-black.jpg'
+import bcg from '../../assets/landing2.jpg'
 
 export const StyledLandingPage = styled.div `
     
@@ -16,30 +16,44 @@ export const StyledLandingPage = styled.div `
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
+    .logo{
+        font-family: var(--font-family-bold);
+        color: var(--color-grey-0);
+        font-size: 4rem;
+        opacity: 0.95;
+        text-shadow: 0 0 1em #e0e0e0, 0 0 0.2em #e0e0e0;
 
-    button{
-        background-color: var(--color-primary);
-        color: var(--color-secondary);
-        border: none;
-        font-weight: bold;
-        font-size: 1.5rem;
-        padding: 0.5rem 1rem;
+        position: relative;
+        bottom: 3rem;
     }
-    .main-content{
-        color: aliceblue;
+    .container__content{
+        width: 100vw;
+        height: 45vh;
+        background-color: var(--color-primary-dark);
+
+        position: absolute;
+        bottom: 0;
+        left: 0;
+
+        box-shadow: 10px 0px 40px 5px var(--color-primary);
 
         display: flex;
+        gap: 1rem;
         align-items: center;
         justify-content: center;
-
-        gap: 1rem;
-        width: 20rem;
-        max-width: 90%;
-        margin-top: 20rem;
-        
     }
-    .main-content button{
-        margin: 0 auto;
+    
+    section{
+        width: 30%;
+        height: 90%;
+        font-family: var(--font-family-bold);
+        color: var(--color-grey-0);
+        text-align: center;
+        line-height: 200%;
+    }
+    section h1{
+        font-size: 2rem;
+        margin: 2rem 0rem;
     }
 
 `

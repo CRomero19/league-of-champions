@@ -19,7 +19,6 @@ export const StyledHeader = styled.header `
     }
     nav{
         display: flex;
-        gap: 1rem;
     }
     @media (max-width:1023px){
         nav{

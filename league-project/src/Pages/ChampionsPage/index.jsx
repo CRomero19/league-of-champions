@@ -15,7 +15,7 @@ export const ChampionsPage = ({champions}) => {
     <StyledChampionsPage>
       
       <Champions champions={champions}/>
-    </StyledChampionsPage>
+      </StyledChampionsPage>
     )
     :
       <LoadingPage/>
