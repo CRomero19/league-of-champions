@@ -21,6 +21,7 @@ export const AboutLeaguePage = () => {
             League of Legends features several game modes, each offering a
             unique gameplay experience for players. Some of the most popular
             game modes include:
+          </p>  
             <ul>
               <li>
                 Ranked: In Ranked mode, players compete in matches with other
@@ -66,7 +67,6 @@ export const AboutLeaguePage = () => {
               game, or a fast-paced battle, League of Legends has a game mode
               for you.
             </p>
-          </p>
 
           <h2> Come and play! </h2>
           <p>

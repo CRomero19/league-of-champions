@@ -18,4 +18,12 @@ export const StyledSkills = styled.div`
     display: flex;
     gap: 0.8rem;
   }
+
+  @media (max-width:430px){
+    .skills {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+  }
 `;

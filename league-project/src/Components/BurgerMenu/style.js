@@ -2,8 +2,8 @@ import styled from "styled-components";
 
 export const StyledBurgerMenu = styled.div`
   .menu-burger {
-    height: 8.5vh;
-    width: 4rem;
+    height: 7vh;
+    width: fit-content;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -11,28 +11,45 @@ export const StyledBurgerMenu = styled.div`
     cursor: pointer;
   }
   .bar {
-    width: 4rem;
-    height: 0.4rem;
+    width: 3rem;
+    height: 0.3rem;
     background-color: var(--color-grey-0);
     border-radius: 0.5rem;
   }
-  .menu{
-    width: 30vw;
+  .menu {
+    width: 50vw;
     display: flex;
     flex-direction: column;
     gap: 0rem;
     position: absolute;
-    right: 0rem;
-    background-color: rgb(0,0,0,0.8);
+    right: 0.05rem;
+    background-color: rgb(0, 0, 0, 0.8);
     top: 10vh;
   }
-  .hidden{
+  .hidden {
     display: none;
   }
-  .visible{
+  .visible {
     display: flex;
   }
-  @media (min-width:1024px){
+  button {
+    background: none;
+    border: none;
+    color: aliceblue;
+    border-bottom: 3px solid transparent;
+    font-family: var(--font-family-bold);
+
+    padding: 1rem;
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+  }
+  button:hover {
+    background-color: var(--color-grey-hover);
+    border-bottom: 3px solid var(--color-primary-50);
+    color: var(--color-secondary);
+  }
+  @media (min-width: 1024px) {
     display: none;
   }
 `;

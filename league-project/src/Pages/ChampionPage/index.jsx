@@ -32,7 +32,7 @@ export const ChampionPage = () => {
     <Header />
       {champion ? (
         <StyledChampionPage>
-          <div className="teste">
+          <div className="container__main">
             <img
               src={`http://ddragon.leagueoflegends.com/cdn/img/champion/loading/${champion.id}_0.jpg`}
               alt=""

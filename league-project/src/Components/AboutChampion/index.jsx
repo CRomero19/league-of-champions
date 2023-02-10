@@ -3,7 +3,6 @@ import { StyledAboutChampion } from './style'
 import { GiHealthPotion,GiSwordsEmblem, GiCrossedSwords, GiRunningShoe } from 'react-icons/gi'
 
 export const AboutChampion = ({champion}) => {
-  console.log(champion)
   return (
     <StyledAboutChampion>
                 <h1> How to play with:</h1>

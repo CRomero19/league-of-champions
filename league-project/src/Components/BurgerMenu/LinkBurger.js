@@ -13,7 +13,6 @@ export const StyledLinkBurger = styled(Link)`
     &:hover,
     &:focus {
         background-color: var(--color-grey-hover);
-        /* border-radius: 8px; */
         border-bottom: 3px solid var(--color-primary-50);
         color: var(--color-secondary);
     }

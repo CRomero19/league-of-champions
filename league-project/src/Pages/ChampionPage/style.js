@@ -4,18 +4,19 @@ export const StyledChampionPage = styled.div `
     display: flex;
 
     min-height: 98.3vh;
-    max-width: 100vw;
+    /* width: 100vw; */
     padding: 0.5rem;
     color: #fff;
     background: linear-gradient(to top, rgb(19, 22, 63) 0%, rgb(83, 120, 149) 100%);
     
-    .teste{
+    .container__main{
         display: flex;
         gap: 2rem;
         height: fit-content;
 
         margin-top: 10.5vh;
         justify-self: center;
+        width: 100%;
     }
     
     .champion-name{
@@ -39,8 +40,8 @@ export const StyledChampionPage = styled.div `
     }
 
     @media (max-width:767px){
-        .teste{
-        flex-direction: column;
+        .container__main{
+            flex-direction: column;
         }
         .side-img-small-screen{
             max-width: 99%;

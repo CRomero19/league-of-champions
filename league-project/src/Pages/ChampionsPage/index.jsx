@@ -5,7 +5,7 @@ import { LoadingPage } from '../LoadingPage'
 import { StyledChampionsPage } from './style'
 
 export const ChampionsPage = ({champions}) => {
-  console.log(champions)
+ 
   return (
     <>
     <Header/>

@@ -22,7 +22,7 @@ export const LandingPage = () => {
           <section>
             <HiOutlineGlobe size={70}/>
             <h1> Want to improve?</h1>
-            <p> Here you'll get all the statistics you need to get to get to the top!</p>
+            <p> Here you'll get all the statistics you need to get to the top!</p>
           </section>
 
           <section className='last-section'>
