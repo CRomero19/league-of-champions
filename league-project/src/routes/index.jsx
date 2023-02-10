@@ -7,7 +7,9 @@ import { useEffect, useState } from 'react'
 import { allChampions } from '../services/api-allheroes'
 import { ChampionPage } from '../Pages/ChampionPage';
 import { AboutLeaguePage } from '../Pages/AboutLeagueOfLegends';
-import { LoadingPage } from '../Pages/LoadingPage';
+import { GuidesPage } from '../Pages/GuidesPage';
+import { FeedbackPage } from '../Pages/FeedbackPage'
+import { ProfilePage } from '../Pages/ProfilePage'
 
 export const AppRoutes = () => {
 const [champions, setChampions] = useState([])
@@ -30,6 +32,9 @@ const [champions, setChampions] = useState([])
       <Route path='/champions-page' element={ <ChampionsPage champions={champions}/> }/>
       <Route path='/champions-page/champion/:championId' element={ <ChampionPage/>} />
       <Route path='/about' element={ <AboutLeaguePage/>} />
+      <Route path='/guides' element={ <GuidesPage/>} />  {/* AQUI POSSO USAR O OUTLINE PARA COLOCAR OUTROS GUIAS DENTRO DESSE GUIA S3 demo de rotas do tsu!! QUARTA EU ACHO!! */}
+      <Route path='/feedback' element={ <FeedbackPage/>} />
+      <Route path='/profile' element={ <ProfilePage/>} />  {/* COLOCAR UM /: futuramente pra buscar por param ID do cara. */}
       <Route path='*' element={ <NotFound/>} />
     </Routes>
   )

@@ -22,7 +22,6 @@ export const Championcard = ({champion}) => {
         <p className='name'> <strong>{champion.name}</strong>, {champion.title} </p> 
         <p> {champion.blurb}</p>
         <StyledLinkCard to={`champion/${champion.id}`}> Learn more... </StyledLinkCard> 
-        
       </div>
       
       

@@ -35,7 +35,7 @@ export const StyledCard = styled.li `
     @media (max-width: 768px)
         {
             flex-direction: column;
-            height: 27rem;
+            min-height: 35rem;
         }
         .img{
             width: 100%;
@@ -47,6 +47,7 @@ export const StyledCard = styled.li `
         
     @media (min-width: 769px)
         {
+            
             .img{
                 width: 150px;
                 height: 272px;

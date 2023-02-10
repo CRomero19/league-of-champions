@@ -22,13 +22,14 @@ export const LandingPage = () => {
           <section>
             <HiOutlineGlobe size={70}/>
             <h1> Want to improve?</h1>
-            <p> Here you'll get all the statistics you need to get to the top!</p>
+            <p> Here you'll get all the information you need to get to the top! </p>
+           {/*  <p> Here you'll get all the statistics you need to get to the top!</p> */}
           </section>
 
           <section className='last-section'>
             <FaGitAlt size={70}/> 
             <h1>Open source</h1>
-            <p> Help we build this data tracker! </p>
+            <p> Let's build this together! </p>
           </section>
 
         </div>

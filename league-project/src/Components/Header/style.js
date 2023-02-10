@@ -32,24 +32,21 @@ export const StyledHeader = styled.header `
         align-items: center;
         padding: 0.3rem 1rem;
     }
+
     button:hover{
         background-color: var(--color-grey-hover);
         border-bottom: 3px solid var(--color-primary-50);
         color: var(--color-secondary);
     }
+    
     @media (max-width:1023px){
         nav{
             display: none;
         }
     }
     @media (min-width:1024px){
-        .hamburger-menu{
-            display: none;
-        }
-        nav{
-            display: flex;
-            align-items: center;
-        }
+        
+        
     }
 
 `

@@ -3,6 +3,7 @@ import { StyledBurgerMenu } from './style'
 import { StyledLinkBurger } from './LinkBurger'
 import { FaGlobe } from 'react-icons/fa'
 
+
 export const BurgerMenu = () => {
   const [menuClass, setMenuClass] = useState('menu hidden')
   const [menuStatus, setMenuStatus] = useState(false)
@@ -29,11 +30,11 @@ export const BurgerMenu = () => {
           <StyledLinkBurger to={`/`}> Home </StyledLinkBurger>
           <StyledLinkBurger to={`/about`}> About League of legends </StyledLinkBurger>
           <StyledLinkBurger to={`/champions-page`}> Champions </StyledLinkBurger>
-          <StyledLinkBurger to={`/champions-page`}> Guides </StyledLinkBurger>
-          <StyledLinkBurger to={`/champions-page`}> logged && PROFILE </StyledLinkBurger>
-          <StyledLinkBurger to={`/champions-page`}> FeedbackSuggestions </StyledLinkBurger>
-          <StyledLinkBurger to={`/champions-page`}> logged ? LOGOUT : LOGIN </StyledLinkBurger>
-          <button> <FaGlobe color='white' size={30}/> Language {/* 'passar a linguagem' */}</button>
+         {/*  <StyledLinkBurger to={`/guides`}> Guides </StyledLinkBurger>
+          <StyledLinkBurger to={`/profile`}> Profile </StyledLinkBurger> */}
+          <StyledLinkBurger to={`/feedback`}> Feedback </StyledLinkBurger>
+          {/* <button> <FaGlobe color='white' size={25}/> Language </button> */}
+          {/* <StyledLinkHeader to={`/champions-page`}> logado ? LOGOUT : LOGIN </StyledLinkHeader>  */}
       </div>
     </StyledBurgerMenu>
   )

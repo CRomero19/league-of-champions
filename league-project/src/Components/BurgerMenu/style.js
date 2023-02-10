@@ -33,16 +33,7 @@ export const StyledBurgerMenu = styled.div`
     display: flex;
   }
   button {
-    background: none;
-    border: none;
-    color: aliceblue;
-    border-bottom: 3px solid transparent;
-    font-family: var(--font-family-bold);
-
     padding: 1rem;
-    display: flex;
-    gap: 0.5rem;
-    align-items: center;
   }
   button:hover {
     background-color: var(--color-grey-hover);
