@@ -10,7 +10,6 @@ export const StyledFeedbackPage = styled.div`
     justify-content: center;
     font-family: var(--font-family-bold);
     
-
     ${props => props.satisfactionGrade < 5 && css`span{color:red}`}
     ${props => props.satisfactionGrade == 5 && css`span{color:var(--color-grey-100)}`}
     ${props => props.satisfactionGrade >= 6 && css`span{color:var(--color-primary-50)}`}

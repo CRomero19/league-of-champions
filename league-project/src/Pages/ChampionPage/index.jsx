@@ -34,11 +34,11 @@ export const ChampionPage = () => {
         <StyledChampionPage>
           <div className="container__main">
             <img
-              src={`http://ddragon.leagueoflegends.com/cdn/img/champion/loading/${champion.id}_0.jpg`}
+              src={`https://ddragon.leagueoflegends.com/cdn/img/champion/loading/${champion.id}_0.jpg`}
               alt=""
               className="side-img"
             />
-            <img src={`http://ddragon.leagueoflegends.com/cdn/img/champion/splash/${championId}_0.jpg`} alt="" className="side-img-small-screen"/>
+            <img src={`https://ddragon.leagueoflegends.com/cdn/img/champion/splash/${championId}_0.jpg`} alt="" className="side-img-small-screen"/>
 
             <main>
               <section className="container__content">

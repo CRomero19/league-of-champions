@@ -40,7 +40,7 @@ export const StyledCard = styled.li `
         .img{
             width: 100%;
             height: 230px;  
-            background:url(${props=> `http://ddragon.leagueoflegends.com/cdn/img/champion/splash/${props.championId}_0.jpg`});
+            background:url(${props=> `https://ddragon.leagueoflegends.com/cdn/img/champion/splash/${props.championId}_0.jpg`});
             background-position: center;
             background-size: cover;
         }
@@ -51,7 +51,7 @@ export const StyledCard = styled.li `
             .img{
                 width: 150px;
                 height: 272px;
-                background:url(${props=> `http://ddragon.leagueoflegends.com/cdn/img/champion/loading/${props.championId}_0.jpg`});
+                background:url(${props=> `https://ddragon.leagueoflegends.com/cdn/img/champion/loading/${props.championId}_0.jpg`});
                 background-repeat: no-repeat;
                 background-position: center;
                 background-size: contain;

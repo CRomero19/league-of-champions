@@ -57,6 +57,9 @@ export const StyledLandingPage = styled.div `
     }
 
     @media (max-width:768px) {
+        .container__content{
+            bottom: 0;
+        }
         .logo{
             text-align: center;
             line-height: 100%;
