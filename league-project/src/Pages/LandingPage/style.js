@@ -12,7 +12,9 @@ export const StyledLandingPage = styled.div `
     justify-content: center;
     align-items: center;
     
-    background: url(${bcg}) no-repeat;
+    /* background: url(${bcg}) no-repeat; */
+    /* background: url(https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Lulu_5.jpg); */
+    background: url(https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Sona_2.jpg);
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
@@ -49,6 +51,14 @@ export const StyledLandingPage = styled.div `
         color: var(--color-grey-0);
         text-align: center;
         line-height: 200%;
+        cursor: pointer;
+        transition: 600ms;
+    }
+    section:hover{
+        color:var(--color-primary-50);
+    }
+    section span{
+        color: var(--color-primary);
     }
 
     section h1{
@@ -57,6 +67,10 @@ export const StyledLandingPage = styled.div `
     }
 
     @media (max-width:768px) {
+
+        background-size: cover;
+        background-position: center;
+
         .container__content{
             bottom: 0;
         }

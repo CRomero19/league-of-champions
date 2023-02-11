@@ -12,7 +12,7 @@ export const StyledFeedbackPage = styled.div`
     
     ${props => props.satisfactionGrade < 5 && css`span{color:red}`}
     ${props => props.satisfactionGrade == 5 && css`span{color:var(--color-grey-100)}`}
-    ${props => props.satisfactionGrade >= 6 && css`span{color:var(--color-primary-50)}`}
+    ${props => props.satisfactionGrade >= 6 && css`span{color:var(--color-succes-vibrant)}`}
     main{
         position: absolute;
         top: 11vh;
@@ -52,6 +52,10 @@ export const StyledFeedbackPage = styled.div`
         background-color: var(--color-grey-20);
         text-align: center;
     }
+    .selected-grade:hover{
+        background-color: var(--color-grey-50);
+        color: var(--color-grey-0);
+    }
     
     .submit{
         width: fit-content;
@@ -61,10 +65,11 @@ export const StyledFeedbackPage = styled.div`
         background-color: var(--color-grey-100);
         color: var(--color-grey-0);
         line-height: 90%;
+        transition:500ms;
     }
-    .selected-grade:hover{
+    .submit:hover{
         background-color: var(--color-grey-50);
-        color: var(--color-grey-0);
+
     }
     form{
         margin-top: 1rem;
@@ -84,17 +89,22 @@ export const StyledFeedbackPage = styled.div`
         border: 1px solid var(--color-grey-50);
         padding: 0.3rem;
         color: var(--color-grey-0);
+        text-indent:0.3rem;
     }
     form input::placeholder{
     color: var(--color-grey-0);
-    opacity: 1;  
+    opacity: 0.75;  
     }
-    form select,textarea::placeholder { 
+    form textarea::placeholder { 
     color: var(--color-grey-0);
-    opacity: 1; 
+    opacity: 0.75;
 }
-@media (max-width:1023px){
+    @media (max-width:1023px){
         height: 130vh;
+            
+    h1{
+        line-height:150%;
+    }
     }
 `
 

@@ -7,12 +7,13 @@ export const StyledCard = styled.li `
     
     display: flex;
     gap: 0.5rem;
-    
+    font-family: var(--font-family-medium);
     position: relative;
-    font-family: 'Roboto';
     background-color: var(--color-grey-50);
-    /* color: var(--color-secondary-20); */
 
+    h2{
+        font-family: var(--font-family-bold);
+    }
     strong{
         font-weight: bold;
     }
@@ -31,15 +32,15 @@ export const StyledCard = styled.li `
         font-family: var(--font-family-bold);
         text-align: center;
     }
-    
+
     @media (max-width: 768px)
         {
             flex-direction: column;
-            min-height: 35rem;
+            min-height: 32.5rem;
         }
         .img{
             width: 100%;
-            height: 230px;  
+            height: 14.375rem;  
             background:url(${props=> `https://ddragon.leagueoflegends.com/cdn/img/champion/splash/${props.championId}_0.jpg`});
             background-position: center;
             background-size: cover;
@@ -47,15 +48,13 @@ export const StyledCard = styled.li `
         
     @media (min-width: 769px)
         {
-            
             .img{
                 width: 150px;
-                height: 272px;
+                height: 17rem;
                 background:url(${props=> `https://ddragon.leagueoflegends.com/cdn/img/champion/loading/${props.championId}_0.jpg`});
                 background-repeat: no-repeat;
                 background-position: center;
                 background-size: contain;
-                
             }
         }
     

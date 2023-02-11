@@ -10,6 +10,7 @@ export const Championcard = ({champion}) => {
       <figure>
        <div className='img'></div>
         <figcaption>{
+          /* IMPLEMENT DIFERENTE COLLORS OR ICONS FOR EACH CLASS */
           champion.tags.length == 1 ?
           <p className='tags'>{champion.tags}</p>
           :
@@ -19,7 +20,7 @@ export const Championcard = ({champion}) => {
       </figure>
       
       <div className='card-content'>
-        <p className='name'> <strong>{champion.name}</strong>, {champion.title} </p> 
+        <h2 className='name'> <strong>{champion.name}</strong>, {champion.title} </h2> 
         <p> {champion.blurb}</p>
         <StyledLinkCard to={`champion/${champion.id}`}> Learn more... </StyledLinkCard> 
       </div>

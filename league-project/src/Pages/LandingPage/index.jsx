@@ -16,19 +16,21 @@ export const LandingPage = () => {
           <section>
             < FaBook size={70}/>
             <h1> Begginers guides! </h1>
+            <span> (coming soon) </span>
             <p> If you are new to the game we support you! Come check our guides!</p>
           </section>
 
           <section>
             <HiOutlineGlobe size={70}/>
             <h1> Want to improve?</h1>
+            <span> (coming soon) </span>
             <p> Here you'll get all the information you need to get to the top! </p>
            {/*  <p> Here you'll get all the statistics you need to get to the top!</p> */}
           </section>
 
           <section className='last-section'>
             <FaGitAlt size={70}/> 
-            <h1>Open source</h1>
+            <h1>Open source </h1> <span> (coming soon) </span>
             <p> Let's build this together! </p>
           </section>
 

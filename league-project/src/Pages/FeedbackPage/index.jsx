@@ -30,9 +30,6 @@ export const FeedbackPage = () => {
     else
     return toast.error(" Text area can't be blank! ❌")
   }
-  
-
-  
 
   return (
     <StyledFeedbackPage satisfactionGrade={satisfactionGrade}>

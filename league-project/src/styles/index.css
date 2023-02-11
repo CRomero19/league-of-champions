@@ -1,3 +1,6 @@
 @import './reset.css';
 @import './globalStyles.css';
 
+*{
+    font-family: var(--font-family-medium);
+}

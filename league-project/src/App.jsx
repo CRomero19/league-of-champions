@@ -1,6 +1,6 @@
 import './styles/index.css'
 import { AppRoutes } from './routes';
-import { StyledContainerToast } from "./Styles/toast"
+import { StyledContainerToast } from "./styles/toast"
 import "react-toastify/dist/ReactToastify.css"
 
 function App() {
