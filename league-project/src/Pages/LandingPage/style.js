@@ -30,7 +30,8 @@ export const StyledLandingPage = styled.div `
     }
     .container__content{
         width: 100vw;
-        height: 45vh;
+        height: 30rem;
+        max-height: 40vh;
         background-color: var(--color-primary-dark);
 
         position: absolute;
@@ -67,9 +68,6 @@ export const StyledLandingPage = styled.div `
     }
 
     @media (max-width:768px) {
-
-        background-size: cover;
-        background-position: center;
 
         .container__content{
             bottom: 0;

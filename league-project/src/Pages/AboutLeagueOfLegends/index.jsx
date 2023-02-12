@@ -8,7 +8,7 @@ export const AboutLeaguePage = () => {
       <Header />
       <main>
         <section>
-          <h1> What is League of Legends?</h1>
+          <h1> What is League of Legends? </h1> <span> (Under construction) </span>
           <p>
             League of Legends (LOL) is a Multiplayer Online Battle Arena (MOBA)
             game that was released by Riot Games in 2009. In a MOBA, each of the

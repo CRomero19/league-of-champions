@@ -12,7 +12,7 @@ export const FeedbackPage = () => {
   const setGrade = (grade)=>{
     setSatisfactionGrade(grade)
   }
-  const { register, handleSubmit} = useForm({})
+  const { register, handleSubmit, reset} = useForm({})
 
   const handleFeedbackForm = (data) => {
     console.log(data)
@@ -25,7 +25,10 @@ export const FeedbackPage = () => {
       }
       emailjs.send("service_n2mmtf7","template_yffogt7",templateParams,"5ItJh1dsj9sEj-ai5")
       .then((res)=>console.log(res.status))
-      toast.success('Email sent! 👍')
+      toast.success('Email sent!')
+      toast.success('THANK YOU!👍')
+      setSatisfactionGrade('')
+      reset()
     }
     else
     return toast.error(" Text area can't be blank! ❌")
