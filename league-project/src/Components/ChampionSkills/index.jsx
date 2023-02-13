@@ -13,7 +13,7 @@ export const ChampionSkills = ({ champion }) => {
       <div className="skills">
         {
             champion.spells.map(spell => (
-                 <img key={spell.id} src={`http://ddragon.leagueoflegends.com/cdn/13.1.1/img/spell/${spell.image.full}` } className="img-passive"/>
+                 <img key={spell.id} src={`https://ddragon.leagueoflegends.com/cdn/13.1.1/img/spell/${spell.image.full}` } className="img-passive"/>
                 ))
         }
       </div>
