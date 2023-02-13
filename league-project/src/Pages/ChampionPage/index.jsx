@@ -7,8 +7,10 @@ import { Header } from "../../Components/Header";
 import { AboutChampion } from "../../Components/AboutChampion";
 import { ChampionSkills } from "../../Components/ChampionSkills";
 import { LoadingPage } from "../LoadingPage";
+import { FaChevronRight, FaChevronLeft } from 'react-icons/fa'
 
 export const ChampionPage = () => {
+  const baseUrlImg = 'https://ddragon.leagueoflegends.com/cdn/img/champion'
   const [champion, setChampion] = useState(null);
   const [ championSkin, setChampionSkin] = useState(0)
   const { championId } = useParams();
@@ -31,7 +33,6 @@ export const ChampionPage = () => {
   const previousChampionSkin = () =>{
     if(champion.skins.length > championSkin)
     setChampionSkin(championSkin-1)
-    console.log(championSkin)
   }
 
   const nextChampionSkin = () =>{
@@ -47,14 +48,21 @@ export const ChampionPage = () => {
       {champion ? (
         <StyledChampionPage>
           <div className="container__main">
-            <img
-              src={`https://ddragon.leagueoflegends.com/cdn/img/champion/loading/${champion.id}_${championSkin}.jpg`}
-              alt=""
-              className="side-img"
-            />
-            <img src={`https://ddragon.leagueoflegends.com/cdn/img/champion/splash/${championId}_0.jpg`} alt="" className="side-img-small-screen"/>
-           {/*  {championSkin > 0 && <button onClick={previousChampionSkin}> prev </button>}
-            {championSkin < champion.skins.length &&<button onClick={nextChampionSkin}> next </button>} */}
+            <div className="side-img">
+              <img src={`${baseUrlImg}/loading/${champion.id}_${championSkin}.jpg`} alt={`${champion.id}img`}/>
+              <div className="switch-skin">
+                {championSkin > 0 && <button onClick={previousChampionSkin}className='btn-prev' > <FaChevronLeft/> </button>}
+                {championSkin < champion.skins.length &&<button onClick={nextChampionSkin} className='btn-next'> <FaChevronRight/> </button>}
+              </div>
+            </div>
+            <div className="side-img-small-screen">
+              <img src={`${baseUrlImg}/splash/${championId}_0.jpg`} alt=""/>
+              {championSkin > 0 && <button onClick={previousChampionSkin}> prev </button>}
+              {championSkin < champion.skins.length &&<button onClick={nextChampionSkin}> next </button>}
+            </div>
+            
+           
+            
             <main>
               <section className="container__content">
                 
