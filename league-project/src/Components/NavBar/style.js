@@ -1,7 +1,9 @@
 import styled from "styled-components";
 
-export const StyledBurgerMenu = styled.div`
-  .menu-burger {
+export const StyledNavBar = styled.nav`
+    display: flex;
+
+    .menu-burger {
     height: 7vh;
     width: fit-content;
     display: flex;
@@ -40,7 +42,22 @@ export const StyledBurgerMenu = styled.div`
     border-bottom: 3px solid var(--color-primary-50);
     color: var(--color-secondary);
   }
-  @media (min-width: 1024px) {
+  @media (min-width:1023px) {
+    .menu-burger{
+    display: none;
+    .menu{
+        
+    }
+}
+  }
+  @media (max-width:1023px) {
+    .menu-desktop{
     display: none;
   }
-`;
+    
+  }
+  
+  
+
+    
+`

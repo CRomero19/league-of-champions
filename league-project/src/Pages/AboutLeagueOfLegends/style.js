@@ -6,7 +6,7 @@ export const StyledAboutPage = styled.div`
     min-height: 90vh;
     padding-top: 10vh;
     color: #fff;
-    background: linear-gradient(to top, rgb(19, 22, 63) 0%, rgb(83, 120, 149) 100%);
+    
     
     span{
         color: var(--color-primary-50);

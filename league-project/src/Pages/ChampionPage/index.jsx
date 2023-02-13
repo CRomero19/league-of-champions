@@ -7,7 +7,6 @@ import { Header } from "../../Components/Header";
 import { AboutChampion } from "../../Components/AboutChampion";
 import { ChampionSkills } from "../../Components/ChampionSkills";
 import { LoadingPage } from "../LoadingPage";
-import { Link } from 'react-router-dom'
 
 export const ChampionPage = () => {
   const [champion, setChampion] = useState(null);

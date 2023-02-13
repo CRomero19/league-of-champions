@@ -7,7 +7,7 @@ export const StyledChampionPage = styled.div `
     /* width: 100vw; */
     padding: 0.5rem;
     color: #fff;
-    background: linear-gradient(to top, rgb(19, 22, 63) 0%, rgb(83, 120, 149) 100%);
+    
     
     .container__main{
         display: flex;
