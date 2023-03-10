@@ -55,10 +55,13 @@ export const ChampionPage = () => {
                 {championSkin < champion.skins.length &&<button onClick={nextChampionSkin} className='btn-next'> <FaChevronRight/> </button>}
               </div>
             </div>
+
             <div className="side-img-small-screen">
-              <img src={`${baseUrlImg}/splash/${championId}_0.jpg`} alt=""/>
-              {championSkin > 0 && <button onClick={previousChampionSkin}> prev </button>}
-              {championSkin < champion.skins.length &&<button onClick={nextChampionSkin}> next </button>}
+              <img src={`${baseUrlImg}/splash/${championId}_${championSkin}.jpg`} alt=""/>
+                <div className="switch-skin-mobile">
+                  {championSkin > 0 && <button onClick={previousChampionSkin}className='btn-prev' > <FaChevronLeft/> </button>}
+                  {championSkin < champion.skins.length &&<button onClick={nextChampionSkin} className='btn-next'> <FaChevronRight/> </button>}
+                </div>
             </div>
             
            
