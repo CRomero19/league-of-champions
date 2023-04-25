@@ -18,13 +18,13 @@ export const ChampionsPage = () => {
       {champions.length > 0 ? (
         <StyledChampionsPage>
           <div className="container__search-champion">
-            <button
+            {/* <button
               onClick={() => setChampionListStyle(!championListStyle)}
               className=""
             >
               {" "}
               change style of list{" "}
-            </button>
+            </button> */}
 
             <div className="searchbar">
               <input
