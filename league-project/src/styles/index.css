@@ -5,8 +5,6 @@
     font-family: var(--font-family-medium);
 }
 body{
-    background: linear-gradient(109.6deg, rgb(20, 30, 48) 11.2%, rgb(36, 59, 85) 91.1%);
-
     background: rgb(47,44,88);
     background: linear-gradient(90deg, rgb(20, 30, 48) 6%, rgb(36, 59, 85) 54%, rgb(36, 59, 85) 96%);
 }
